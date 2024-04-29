@@ -1,34 +1,52 @@
-EECE 461: Network Security Systems
-Machine Learning for Malicious URL Detection
-Prepared By: Joel Mendez
-Submitted to: Kevin Muller
-Date: 04/28/2024
-Project Overview
-The purpose of this project is to investigate malicious URLs, attempting to differentiate them using machine learning techniques. The goal is to train a model that is able to consistently differentiate between various types of URLs, including spam, phishing, malware, and defacement. Additionally, insights from this project aim to improve various network security systems.
+# Network Security Systems Final Project
+## Malicious URL Detection
+## EECE 461 Network Security Systems
+### Manhattan College, Electrical & Computer Engineering
 
-Dataset
-The dataset consists of 138,047 URLs, labeled as legitimate or malicious based on their characteristics. After preprocessing to remove irrelevant features, 54 features were retained for model training and testing.
+**Faculty Mentor:** Kevin Muller
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Dataset](#dataset)
+3. [How We Did It](#how-we-did-it)
+4. [Models in the Spotlight](#models-in-the-spotlight)
+5. [What We Learned](#what-we-learned)
+6. [Making a Difference](#making-a-difference)
+7. [Conclusion](#conclusion)
+8. [References](#references)
 
-Procedure
-The development of machine learning models for detecting malicious URLs was performed in Python using Jupyter Notebook. Following a structured approach outlined in this YouTube tutorial, I built upon this foundation by integrating optimizations using Optuna to fine-tune a deep learning model built with TensorFlow.
+## Project Overview
+Welcome to our exploration into the world of cybersecurity through machine learning! The aim of this project is to use machine learning techniques to identify malicious URLs — from spam to malware. We're not just about predicting; we're about making the digital world safer.
 
-Model Selection
-Random Forest Classifier: Achieved 98.38% accuracy on the test set with an F1 score of 97.31%, demonstrating strong performance and reliability.
-Logistic Regression: Achieved a testing accuracy of 92.85%, providing baseline measurements and interpretability.
-Deep Neural Network (TensorFlow): After tuning with Optuna, it achieved over 96% accuracy in both training and testing phases, showcasing its capability to handle complex data structures.
-Learning Goals and Outcomes
-The primary objectives were to understand machine learning techniques for detecting malicious URLs and to learn the feature engineering required for such tasks. Comparing various algorithms highlighted how each processes data differently, suitable for different patterns and complexities.
+## Dataset
+We worked with a dataset of 138,047 URLs, each tagged as either safe or dangerous. We trimmed down to 54 essential features after some neat preprocessing. It's all about focusing on what truly matters!
 
-Real-World Application
-Implementations of this project can be integrated into real-time systems for internet security, such as web browsers for real-time alerts on malicious URLs, email filters to enhance security, and network security systems like firewalls to block traffic from known malicious sources.
+## How We Did It
+Our journey began in the familiar confines of Python and Jupyter Notebooks. We followed a structured approach inspired by this awesome YouTube tutorial, but didn’t stop there! We cranked up our models’ prowess using Optuna for hyperparameter optimization, making our TensorFlow model smarter and swifter.
 
-Conclusion
-This project not only achieved its goals of understanding and applying machine learning techniques to detect malicious URLs but also provided insights into their practical applications in enhancing cybersecurity measures.
+## Models in the Spotlight
+Random Forest Classifier: A robust performer with an impressive 98.38% accuracy on tests. It’s like having the wisdom of the forest on our side!
+Logistic Regression: Quick and insightful, perfect for understanding the basics with a solid 92.85% accuracy.
+Deep Neural Network (TensorFlow): This smart cookie got even smarter, boasting over 96% accuracy post-Optuna tuning!
 
-References
-YouTube Tutorial on Malware Detection
-Packt Publishing - Mastering Machine Learning for Penetration Testing
-URL Feature Engineering and Classification
-Extracting Feature Vectors from URL Strings
-My Source Code
-GitHub Repository for the Project
+## What We Learned
+Every model told a story. This project was a fantastic playground for diving deep into the nuances of machine learning, from crafting features to fine-tuning networks. We learned, we applied, and we conquered!
+
+## Making a Difference
+Imagine browsing safer, emailing without fear of phishing, and fortifying networks with our findings. That’s the future this project contributes towards—enhancing cybersecurity measures everywhere!
+
+## Conclusion
+
+We set out to decode the murky waters of malicious URLs and emerged with potent insights and robust models ready to make a real-world impact. It’s been a rewarding adventure in machine learning and cybersecurity!
+
+## References
+
+https://www.youtube.com/watch?v=fn33V4iX5G4
+https://github.com/AsimGull/Malware-detection-with-ML-and-deep-learning
+https://github.com/PacktPublishing/Mastering-Machine-Learning-for-Penetration-Testing/tree/master/Chapter03
+https://medium.com/nerd-for-tech/url-feature-engineering-and-classification-66c0512fb34d
+https://towardsdatascience.com/extracting-feature-vectors-from-url-strings-for-malicious-url-detection-cbafc24737a
+https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9133026/
+https://www.youtube.com/watch?v=I1refTZp-pg
+https://github.com/shreyagopal/Phishing-Website-Detection-by-Machine-Learning-Techniques
+
